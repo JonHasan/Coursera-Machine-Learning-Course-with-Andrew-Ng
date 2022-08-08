@@ -14,6 +14,18 @@ In the course, Linear Regression was one of the first techniques introduced in t
 | 2104      | 1    | 45   | 460
 | 1416         | 2   | 40   | 232
 
+Source: Machine Learning on Coursera - Video: Multiple Features from Week 2 
+
+The question was then put forth. 
+
+Is it possible to create a relationship between these stated "features" i.e. Size, num of bedrooms etc and the price?
+
+It is indeed possible and that was the focus of the project. The way this is done is by forging a polynomial equation that can generate the price response. This polynomial equation is referred to in the series as a hypothesis. 
+
+$$h_{0} = \theta_{0} + \theta_{1}*x_{1} 
+
+
+
 ## Week 3: Logistic Regression 
 
 ## Week 4: Multi-Class Classification and Neural Networks 
