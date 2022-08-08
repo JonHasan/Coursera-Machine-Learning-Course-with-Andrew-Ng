@@ -22,7 +22,7 @@ Is it possible to create a relationship between these stated "features" i.e. Siz
 
 It is indeed possible and that was the focus of the project. The way this is done is by forging a polynomial equation that can generate the price response. This polynomial equation is referred to in the series as a hypothesis. 
 
-$$h_{0} = \theta_{0} + \theta_{1}*x_{1} 
+$$h_{0} = \theta_{0} + \theta_{1}*x_{1} $$
 
 
 
