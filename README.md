@@ -6,7 +6,7 @@ Goes over the basic Machine Learning Techniques that are common in the field.
 ## Week 2: Linear Regression 
 
 Purpose: Learn about a Machine Learning Technique that will draw a trendline that can relate a set of features to an output. 
-
+### Explanation
 In the course, Linear Regression was one of the first techniques introduced in the course. If we had a dataset on housing prices for example, one would find that the price of the house varies depending on certain key factors. Some of these factors are things like square footage, number of bathrooms, number of bedrooms, Number of floors etc. 
 
 | Size    | Number of bedrooms      | Number of floors| Price($1000)   
@@ -22,9 +22,13 @@ Is it possible to create a relationship between these stated "features" i.e. Siz
 
 It is indeed possible and that was the focus of the project. The way this is done is by forging a polynomial equation that can generate the price response. This polynomial equation is referred to in the series as a hypothesis. 
 
-$$h_{0} = \theta_{0} + \theta_{1}*x_{1} $$
+$$h_{0} = \theta_{0} + \theta_{1}*x_{1} + \theta_{2}*x_{2} + \theta_{3}*x_{3} +\theta_{n}*x_{n}$$
 
+This hypothesis attempts to accurately predict the response variable given a feature space.
 
+### Octave Implementation: 
+
+So it is now desired to create the hypothesis in octave. I prefer to vectorize the solution whenever possible and as recommended by the staff. So if the Theta weight vector is represented as follows: $$[\theta_{0}, \theta_{1}]$$. 
 
 ## Week 3: Logistic Regression 
 
