@@ -26,6 +26,10 @@ $$h_{0} = \theta_{0} + \theta_{1}*x_{1} + \theta_{2}*x_{2} + \theta_{3}*x_{3} +\
 
 This hypothesis attempts to accurately predict the response variable given a feature space.
 
+### Modifying theta with gradient descent 
+
+In order to fit the hypothesis to the response variable, it is necessary to change the theta parameters. 
+
 ### Octave Implementation: 
 
 So it is now desired to create the hypothesis in octave. I prefer to vectorize the solution whenever possible and as recommended by the staff. So if the Theta weight vector is represented as follows: $$[\theta_{0}, \theta_{1}]$$. 
