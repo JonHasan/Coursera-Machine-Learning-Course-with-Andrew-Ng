@@ -30,7 +30,25 @@ $$h_{0} = \theta_{0} + \theta_{1}*x_{1} + \theta_{2}*x_{2} + \theta_{3}*x_{3} +\
 
 This hypothesis attempts to accurately predict the response variable given a feature space.
 
-### Modifying theta with gradient descent 
+### Cost function for Linear Regression 
+
+How do we know if the hypothesis is getting closer to the correct response values according to the dataset. Well in this case its just determinng the Sum of the square or errors. It penalizes very heavily results that are far away from the true value. 
+
+$J = {1}{2*m} * \Sigma((h_{\theta}*X - y)^2)
+
+With poor theta parameters one would get a very bad fit of data as shown below. Graph was made by Professor Ng. 
+
+![image](https://user-images.githubusercontent.com/20827630/184058843-31af0f2c-92db-4bef-9458-78f0b8c216cf.png)
+
+Source: Source: Machine Learning Course by Andrew Ng - Week 1 - Cost Function- Intuition || 
+
+The theta parameters are modified so that the distance between the points is minimized. This results in a graph shown below that was made by Professor Ng. 
+
+![Professor Ng's iteration of Linear Regression](https://user-images.githubusercontent.com/20827630/184058679-73a12e71-223c-4727-ba8d-f3bb3881a740.png)
+
+Source: Machine Learning Course by Andrew Ng - Week 1 - Cost Function- Intuition || 
+
+### Gradient Descent for Linear Regression
 
 In order to fit the hypothesis to the response variable, it is necessary to change the theta parameters. This is done with a technique called gradient descent. It uses the following formula: 
 
@@ -39,6 +57,8 @@ $\theta_{n} = \theta_{n} - \alpha * \Sigma(h_{\theta} * X - y)$
 This can be easily extrapolated to as many theta parameters as necessary. What happens is that the theta parameters in the hypothesis function are updated until the function matches the response variable as closely as possible. 
 
 ## Week 3: Logistic Regression 
+
+## Explanation: 
 
 Logistic Regression was the next important technique taught in the course. 
 
@@ -87,6 +107,8 @@ Professor Ng elegantly shows the Cost function as a consequence of the hypothesi
 Source: Machine Learning Course By Andrew NG - Week 3 Reading: Cost Function
 
 So combining both of these functions will allow for computing the appropriate cost for the hypothesis function. 
+
+### Gradient Descent for Logistic Regression
 
 ## Multiclass Classification 
 
