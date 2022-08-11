@@ -70,10 +70,21 @@ The decision boundary for the logistic function was decided to be .5. If the hyp
 
 So how do we determine if we are accurately predicting the response variables? Well the following cost function is used. 
 
-$Cost(h_{\theta} = log(h_{\theta}*X)$ if y = 1
+$J = \frac{1}{m} * \Sigma(Cost(h_{\theta})$
 
-$Cost(h_{\theta} = -log(1-h_{\theta}*X)$ if y = 0
+Where
 
+$Cost(h_{\theta}) = log(h_{\theta}*X)$ if y = 1
+
+$Cost(h_{\theta}) = -log(1-h_{\theta}*X)$ if y = 0
+
+The reason why this Cost function is used is it was just a creative exercise in order to achieve the desired outcome. What function would allow me to penalize incorrect classifications extremely and when the classifications get closer the cost falls extremely low the closer it gets to the correct value. The functions above seem to do the job correctly so these are used. 
+
+Professor Ng elegantly shows the Cost function as a consequence of the hypothesis function for both scenarios. 
+
+![Professor Ng's graphs for logistic Cost function](https://user-images.githubusercontent.com/20827630/184055145-3c3ccf73-702e-4248-af51-e33b6df125de.png)
+
+Source: Machine Learning Course By Andrew NG - Week 3 Reading: Cost Function
 
 ## Week 4: Multi-Class Classification and Neural Networks 
 
