@@ -54,6 +54,30 @@ This function is shown below.
 
 $g(z) = \frac{1}{1+e^{-z}}$
 
+![Logistic Function](https://user-images.githubusercontent.com/20827630/184052065-e4529d1c-794e-426a-9997-6d3926f4caa8.png)
+
+Source: Machine Learning Course By Andrew NG - Week 3 Reading: Hypothesis Section
+
+This function will map any real value number into a response from 0 to 1. Notice that z has a very small range where it gives a non-integer input. This way, it will be able to classify most of the examples into the categorical bins of 0 and 1.
+
+The hypothesis function therefore becomes a probability that an input will result in a categorical variable response. i.e. P(Y = 1) = .70
+
+However, we still need a way of forcing the function to take a stand. We need to enforce a decision boundary. If it is on one side of the boundary, it will go into one bin. If it is on the other side of the boundary, it will go to the other bin. 
+
+The decision boundary for the logistic function was decided to be .5. If the hypothesis is greater than .5, output the categorical value of 1. Else output categorical variable of 0. The input in octave is just the Theta Matrix transpose multiplied by the X matrix. $\Theta * X$. Note that the input does not have to be linear. It can be whatever shape fits the data. 
+
+### Cost Function for Logistic Regression 
+
+So how do we determine if we are accurately predicting the response variables? Well the following cost function is used. 
+
+$Cost(h_{\theta} = log(h_{\theta}*X)$
+
+\begin{equation}
+ f(x)=\begin{cases}
+    1, & \text{if $x<0$}.\\
+    0, & \text{otherwise}.
+  \end{cases}
+ \end{equation}
 
 ## Week 4: Multi-Class Classification and Neural Networks 
 
