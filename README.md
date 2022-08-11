@@ -70,14 +70,10 @@ The decision boundary for the logistic function was decided to be .5. If the hyp
 
 So how do we determine if we are accurately predicting the response variables? Well the following cost function is used. 
 
-$Cost(h_{\theta} = log(h_{\theta}*X)$
+$Cost(h_{\theta} = log(h_{\theta}*X)$ if y = 1
 
-\begin{equation}
-  f(x)=\begin{cases}
-    log(h_{\theta}*X), & \text{if $y=1$}.\\
-    -log(1-h_{\theta}*X), & \text{if $y=0$}.
-  \end{cases}
-\end{equation}
+$Cost(h_{\theta} = -log(1-h_{\theta}*X)$ if y = 0
+
 
 ## Week 4: Multi-Class Classification and Neural Networks 
 
