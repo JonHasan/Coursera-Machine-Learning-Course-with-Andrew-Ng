@@ -86,6 +86,12 @@ Professor Ng elegantly shows the Cost function as a consequence of the hypothesi
 
 Source: Machine Learning Course By Andrew NG - Week 3 Reading: Cost Function
 
+So combining both of these functions will allow for computing the appropriate cost for the hypothesis function. 
+
+## Multiclass Classification 
+
+TBD
+
 ## Week 4: Multi-Class Classification and Neural Networks 
 
 ## Week 5: Neural Network Learning 
