@@ -73,11 +73,11 @@ So how do we determine if we are accurately predicting the response variables? W
 $Cost(h_{\theta} = log(h_{\theta}*X)$
 
 \begin{equation}
- f(x)=\begin{cases}
-    1, & \text{if $x<0$}.\\
-    0, & \text{otherwise}.
+  f(x)=\begin{cases}
+    log(h_{\theta}*X), & \text{if $y=1$}.\\
+    -log(1-h_{\theta}*X), & \text{if $y=0$}.
   \end{cases}
- \end{equation}
+\end{equation}
 
 ## Week 4: Multi-Class Classification and Neural Networks 
 
