@@ -116,6 +116,16 @@ TBD
 
 ## Week 4: Multi-Class Classification and Neural Networks 
 
+### Explanation:
+
+This week went over one of the most recent additions to the machine learning engineeers toolkit called a neural network. Its a universal function approximator that can create non linear decision boundaries and is inspired by the way the brain learns. The brain is comprised of a particular type of cell called a neuron. It has dendrites that accept inputs and sends the result through to the axon which is the output. 
+
+Between the input and output, we can have hidden layers that can allow for more accuracy in non-linear decision boundaries. 
+
+It looks 
+
+
+
 ## Week 5: Neural Network Learning 
 
 ## Week 6: Regularized Linear Regression for Bias/Variance 
