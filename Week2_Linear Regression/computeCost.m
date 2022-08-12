@@ -6,7 +6,7 @@ function J = computeCost(X, y, theta)
 % Initialize some useful values
 m = length(y); % number of training examples
 
-% You need to return the following variables correctly 
+% You need to return the following variables correctly
 J = 0;
 
 % ====================== YOUR CODE HERE ======================
@@ -19,7 +19,6 @@ error_square = error.^2
 
 J = (.5/m) * sum(error_square);
 
-#J = sum((.5/m) *((X * theta) - y).^2); 
 
 
 % =========================================================================
