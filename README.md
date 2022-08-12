@@ -119,6 +119,11 @@ So combining both of these functions will allow for computing the appropriate co
 
 TBD
 
+## Results of Logistic Regression Project 
+
+![image](https://user-images.githubusercontent.com/20827630/184286261-b0e991ef-ffab-4fad-8c00-95581b298505.png)
+
+
 ## Week 4: Multi-Class Classification and Neural Networks 
 
 ### Explanation:
