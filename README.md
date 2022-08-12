@@ -56,6 +56,11 @@ $\theta_{n} = \theta_{n} - \alpha * \Sigma(h_{\theta} * X - y)$
 
 This can be easily extrapolated to as many theta parameters as necessary. What happens is that the theta parameters in the hypothesis function are updated until the function matches the response variable as closely as possible. 
 
+## Results of project: 
+
+![image](https://user-images.githubusercontent.com/20827630/184282376-a2b10c8f-26d1-41f1-8474-56685901377d.png)
+
+
 ## Week 3: Logistic Regression 
 
 ## Explanation: 
