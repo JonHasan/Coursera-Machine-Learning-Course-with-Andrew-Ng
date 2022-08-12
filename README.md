@@ -34,7 +34,7 @@ This hypothesis attempts to accurately predict the response variable given a fea
 
 How do we know if the hypothesis is getting closer to the correct response values according to the dataset. Well in this case its just determinng the Sum of the square or errors. It penalizes very heavily results that are far away from the true value. 
 
-$J = {1}{2*m} * \Sigma((h_{\theta}*X - y)^2)
+$J = {1}{2*m} * \Sigma((h_{\theta}*X - y)^2)$
 
 With poor theta parameters one would get a very bad fit of data as shown below. Graph was made by Professor Ng. 
 
@@ -118,15 +118,33 @@ TBD
 
 ### Explanation:
 
-This week went over one of the most recent additions to the machine learning engineeers toolkit called a neural network. Its a universal function approximator that can create non linear decision boundaries and is inspired by the way the brain learns. The brain is comprised of a particular type of cell called a neuron. It has dendrites that accept inputs and sends the result through to the axon which is the output. 
+This week went over one of the most recent additions to the machine learning engineeers toolkit called a neural network. It is an algorithm inspired by the inner workings of the brain. It is believed that the brain is using something called "The Master Algorithm" which allows different parts of the brain that are responsible for one function i.e. like hearing and training that brain tissue to be used for seeing things. The brain is comprised of a particular type of cell called a neuron. It has dendrite that accept inputs and sends the result through to the axon which is the output. The algorithm shown in this week attempts to recreate this powerful functionality. 
 
-Between the input and output, we can have hidden layers that can allow for more accuracy in non-linear decision boundaries. 
+The nerual network is a universal function approximator that can create non linear decision boundaries and is inspired by the way the brain learns. 
 
-It looks 
+Between the input and output, we can have hidden layers that can allow for the matching of more complicated non-linear decision boundaries. 
 
+Here is a simplified version of the progression of the neural network. 
+
+$[x1x2x3] -> [] -> h_{\theta}*x$
+
+The inputs x1x2x3 are like the dendrites in the neurons, the inputs are then processed within other hidden networks of neurons and then output in the hypothesis or the axon of the last neurons. 
+
+So what is in the empty brackets? It is the activation functions that show the intermediate outputs. These are [a1a2a3]. What are these activation units though? 
+
+They are the summations of all the results from the previous neurons which are then fed into a sigmoid function. 
+
+This is shown below and was taken from the course. 
+
+![image](https://user-images.githubusercontent.com/20827630/184272996-f8a6c9b9-48b6-441e-9b2e-b4fc5063191c.png)
+ 
+Source: Machine Learning with Andrew Ng - Week 4 - Neural Networks - Model Representation l
+
+Using this we can make function approximators for different boolean functions like AND or NOR. 
 
 
 ## Week 5: Neural Network Learning 
+
 
 ## Week 6: Regularized Linear Regression for Bias/Variance 
 
