@@ -145,6 +145,7 @@ Using this we can make function approximators for different boolean functions li
 
 ## Week 5: Neural Network Learning 
 
+So while the previous Week showed how to use neural networks in order to create classifications, in this week it was 
 
 ## Week 6: Regularized Linear Regression for Bias/Variance 
 
