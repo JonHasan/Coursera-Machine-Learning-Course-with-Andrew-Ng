@@ -154,6 +154,12 @@ This is shown below and was taken from the course.
  
 Source: Machine Learning with Andrew Ng - Week 4 - Neural Networks - Model Representation l
 
+Neural networks can be represented with the following type of diagram. 
+
+![image](https://user-images.githubusercontent.com/20827630/184502416-cc763568-df40-4f82-81ff-9c911e4df213.png)
+
+Source: Machine Learning with Andrew Ng - Week 4 - Neural Networks - Lecture_slides 
+
 In order to perform the prediction phase it is necessary to perform something called a feedForward operation. 
 
 All this operation is doing is multiplying the inputs with the Theta Matrices, activating the results with sigmoid function and adding bias units whenever necessary. 
