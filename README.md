@@ -182,7 +182,7 @@ The gradient is the derivative of the Cost function with regard to the theta par
 
 $\frac{d(J_{\Theta})}{d_{\Theta_{j}} = -\frac{1}{m} * \Sigma(h_{\theta} * X - y) * X$
 
-This will allow you to choose the optimal theta parameters that will minimize the Theta Parameters. 
+This will allow you to choose the optimal theta parameters that will minimize the Cost Functions for each class label. 
 
 ### Results of Neural Network MultiClassification Project 
 
