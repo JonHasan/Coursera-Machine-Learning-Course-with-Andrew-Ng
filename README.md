@@ -176,6 +176,11 @@ So while the previous Week showed how to use neural networks in order to create 
 
 ## Week 7: Support Vector Machines 
 
+### Results of Support Vector Machine Project 
+
+![image](https://user-images.githubusercontent.com/20827630/184470808-cf0fb79e-3c8f-44fb-a0f7-3115078c8c02.png)
+
+
 ## Week 8: K-means Clustering and PCA
 
 ## Week 9: Anamoly Detection and Recommender Systems 
