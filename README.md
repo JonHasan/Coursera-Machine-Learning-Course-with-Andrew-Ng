@@ -154,7 +154,11 @@ This is shown below and was taken from the course.
  
 Source: Machine Learning with Andrew Ng - Week 4 - Neural Networks - Model Representation l
 
-Using this we can make function approximators for different boolean functions like AND or NOR. 
+In order to perform the prediction phase it is necessary to perform something called a feedForward operation. 
+
+All this operation is doing is multiplying the inputs with the Theta Matrices, activating the results with sigmoid function and adding bias units whenever necessary. 
+
+The resulting hypothesis function will appropriately classify all the examples with appropriate label. 
 
 ### Results of Neural Network MultiClassification Project 
 
