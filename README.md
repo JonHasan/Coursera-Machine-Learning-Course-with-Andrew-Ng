@@ -162,6 +162,11 @@ Using this we can make function approximators for different boolean functions li
 
 So while the previous Week showed how to use neural networks in order to create classifications, in this week it was 
 
+### Results of Neural Network Learning Project 
+
+![image](https://user-images.githubusercontent.com/20827630/184470456-560fb781-27d8-4d60-88be-59b68139a62f.png)
+
+
 ## Week 6: Regularized Linear Regression for Bias/Variance 
 
 ## Week 7: Support Vector Machines 
