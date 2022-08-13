@@ -121,13 +121,13 @@ size(Delta_2)
 
 
 %Compute Tbeta1_grad
-Theta1_grad = (1/m) *( Delta_1 + Theta1_grad) + (lambda/m) * Theta1;
+Theta1_grad = (1/m) *( Delta_1 + Theta1_grad);
 
-size(Theta1_grad)
+size(Theta1_grad);
 
-Theta2_grad = (1/m) *( Theta2_grad +  Delta_2) + (lambda/m) * Theta2 ;
+Theta2_grad = (1/m) *( Theta2_grad +  Delta_2);
 
-size(Theta2_grad)
+size(Theta2_grad);
 
 % Part 3: Implement regularization with the cost function and gradients.
 %
@@ -144,6 +144,20 @@ reg = lambda/(2*m)*(sum(sum(Theta1(:,2:end).^2)) + sum(sum(Theta2(:,2:end).^2)))
 
 
 J = J + reg;
+
+%Need to regularize gradients as well
+
+Temp1 = Theta1;
+
+Temp2 = Theta2;
+
+Temp1(:, 1) = 0;
+
+Temp2(:, 1) = 0;
+
+Theta1_grad = Theta1_grad + (lambda/m) * Temp1;
+
+Theta2_grad = Theta2_grad + (lambda/m) * Temp2;
 
 
 
