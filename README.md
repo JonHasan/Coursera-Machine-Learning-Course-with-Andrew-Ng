@@ -148,12 +148,6 @@ So what is in the empty brackets? It is the activation functions that show the i
 
 They are the summations of all the results from the previous neurons which are then fed into a sigmoid function. 
 
-This is shown below and was taken from the course. 
-
-![image](https://user-images.githubusercontent.com/20827630/184272996-f8a6c9b9-48b6-441e-9b2e-b4fc5063191c.png)
- 
-Source: Machine Learning with Andrew Ng - Week 4 - Neural Networks - Model Representation l
-
 Neural networks can be represented with the following type of diagram. 
 
 ![image](https://user-images.githubusercontent.com/20827630/184502416-cc763568-df40-4f82-81ff-9c911e4df213.png)
@@ -165,6 +159,14 @@ In order to perform the prediction phase it is necessary to perform something ca
 All this operation is doing is multiplying the inputs with the Theta Matrices, activating the results with sigmoid function and adding bias units whenever necessary. 
 
 The resulting hypothesis function will appropriately classify all the examples with appropriate label. 
+
+The equations used in the feedforward operation are shown below for the example network. 
+
+This is shown below and was taken from the course. 
+
+![image](https://user-images.githubusercontent.com/20827630/184272996-f8a6c9b9-48b6-441e-9b2e-b4fc5063191c.png)
+ 
+Source: Machine Learning with Andrew Ng - Week 4 - Neural Networks - Model Representation l
 
 ### Results of Neural Network MultiClassification Project 
 
