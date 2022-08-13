@@ -1,7 +1,11 @@
 # Coursera-Machine-Learning-Course-with-Andrew-Ng
-Introductory Machine Learning Course from Standford 
+Introductory Machine Learning Course from Stanford  - My first MOOC started 6 years ago. Now completed after all this time... One more victory.....
 
-Goes over the basic Machine Learning Techniques that are common in the field. 
+Goes over the basic Machine Learning Techniques that are common in the field and applied them to a wide variety of different Cases.
+
+## Note of thanks: 
+
+I would like to thank the mentor Tom Mosher for his very helpful tutorials which have been of great assistance in finishing these project assignments. 
 
 ## Week 2: Linear Regression 
 
