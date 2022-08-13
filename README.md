@@ -183,4 +183,8 @@ So while the previous Week showed how to use neural networks in order to create 
 
 ## Week 8: K-means Clustering and PCA
 
+### Results of K-means Clustering and PCA Project 
+
+![image](https://user-images.githubusercontent.com/20827630/184471056-49379698-d58d-4381-933a-d09ddbf96a75.png)
+
 ## Week 9: Anamoly Detection and Recommender Systems 
