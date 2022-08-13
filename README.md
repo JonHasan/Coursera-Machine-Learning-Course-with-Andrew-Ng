@@ -156,7 +156,7 @@ Source: Machine Learning with Andrew Ng - Week 4 - Neural Networks - Model Repre
 
 Using this we can make function approximators for different boolean functions like AND or NOR. 
 
-# Results of Neural Network MultiClassification Project 
+### Results of Neural Network MultiClassification Project 
 
 ![image](https://user-images.githubusercontent.com/20827630/184469799-1eca7fac-b6a7-4e63-a3fc-e0ae305497c7.png)
 
