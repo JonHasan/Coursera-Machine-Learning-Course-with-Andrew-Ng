@@ -169,6 +169,11 @@ So while the previous Week showed how to use neural networks in order to create 
 
 ## Week 6: Regularized Linear Regression for Bias/Variance 
 
+### Results
+
+![image](https://user-images.githubusercontent.com/20827630/184470566-a8f478f1-0ebe-4ec7-888c-6d3ef039afed.png)
+
+
 ## Week 7: Support Vector Machines 
 
 ## Week 8: K-means Clustering and PCA
