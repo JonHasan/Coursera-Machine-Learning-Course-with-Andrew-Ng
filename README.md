@@ -188,3 +188,9 @@ So while the previous Week showed how to use neural networks in order to create 
 ![image](https://user-images.githubusercontent.com/20827630/184471056-49379698-d58d-4381-933a-d09ddbf96a75.png)
 
 ## Week 9: Anamoly Detection and Recommender Systems 
+
+### Results of Anomaly Detection and Recommender systems 
+
+![image](https://user-images.githubusercontent.com/20827630/184471099-8c76f324-9498-4f65-be91-87334682f227.png)
+
+
