@@ -172,7 +172,7 @@ Source: Machine Learning with Andrew Ng - Week 4 - Neural Networks - Model Repre
 
 The Cost function used by neural networks for classification is the same as the one used for Logistic Regression. It is shwon below 
 
-$J(\Theta) = (-1/m) * \Sigma(y * log(h_{theta} * X) + (1 - y^(i)) * (1 - log(h_{theta} * X)))$
+$J(\Theta) = \frac{-1}{m} * \Sigma(y^{i} * log(h_{\theta} * X) + (1 - y^{i}) * (1 - log(h_{\theta} * X)))$
 
 ### Results of Neural Network MultiClassification Project 
 
