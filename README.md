@@ -215,11 +215,19 @@ So while the previous Week showed how to use neural networks in order to create 
 
 ## Week 8: K-means Clustering and PCA
 
+### Explanation: 
+
+### Cost function for K-means and PCA
+
 ### Results of K-means Clustering and PCA Project 
 
 ![image](https://user-images.githubusercontent.com/20827630/184471056-49379698-d58d-4381-933a-d09ddbf96a75.png)
 
 ## Week 9: Anamoly Detection and Recommender Systems 
+
+### Explanation: 
+
+### Cost function for Anomaly Detection and Recommender Systems. 
 
 ### Results of Anomaly Detection and Recommender systems 
 
