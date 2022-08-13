@@ -119,7 +119,7 @@ So combining both of these functions will allow for computing the appropriate co
 
 ### Gradient Descent for Logistic Regression
 
-## Multiclass Classification 
+### Multiclass Classification 
 
 TBD
 
