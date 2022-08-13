@@ -3,7 +3,7 @@ Introductory Machine Learning Course from Stanford  - My first MOOC started 6 ye
 
 Goes over the basic Machine Learning Techniques that are common in the field and applied them to a wide variety of different Cases.
 
-## Note of thanks: 
+### Note of thanks: 
 
 I would like to thank the mentor Tom Mosher for his very helpful tutorials which have been of great assistance in finishing these project assignments. 
 
@@ -60,7 +60,7 @@ $\theta_{n} = \theta_{n} - \alpha * \Sigma(h_{\theta} * X - y)$
 
 This can be easily extrapolated to as many theta parameters as necessary. What happens is that the theta parameters in the hypothesis function are updated until the function matches the response variable as closely as possible. 
 
-## Results of project: 
+### Results of Linear Regression project: 
 
 ![image](https://user-images.githubusercontent.com/20827630/184282376-a2b10c8f-26d1-41f1-8474-56685901377d.png)
 
@@ -123,7 +123,7 @@ So combining both of these functions will allow for computing the appropriate co
 
 TBD
 
-## Results of Logistic Regression Project 
+### Results of Logistic Regression Project 
 
 ![image](https://user-images.githubusercontent.com/20827630/184286261-b0e991ef-ffab-4fad-8c00-95581b298505.png)
 
