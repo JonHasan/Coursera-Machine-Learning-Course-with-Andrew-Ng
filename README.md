@@ -168,11 +168,21 @@ This is shown below and was taken from the course.
  
 Source: Machine Learning with Andrew Ng - Week 4 - Neural Networks - Model Representation l
 
-### Cost function for neural networks
+### Cost function for neural networks in classification 
 
 The Cost function used by neural networks for classification is the same as the one used for Logistic Regression. It is shwon below 
 
 $J(\Theta) = \frac{-1}{m} * \Sigma(y^{i} * log(h_{\theta} * X) + (1 - y^{i}) * (1 - log(h_{\theta} * X)))$
+
+This is applied to each of the output nodes to see which class accurately represents the training example in the X matrix. 
+
+### Gradient for neural networks in classification 
+
+The gradient is the derivative of the Cost function with regard to the theta parameters. It is shown below. 
+
+$\frac{d(J_{\Theta})}{d_{\Theta_{j}} = -\frac{1}{m} * \Sigma(h_{\theta} * X - y) * X$
+
+This will allow you to choose the optimal theta parameters that will minimize the Theta Parameters. 
 
 ### Results of Neural Network MultiClassification Project 
 
