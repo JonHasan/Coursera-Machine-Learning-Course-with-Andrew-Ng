@@ -206,7 +206,7 @@ This requires the use of a technique called backpropagation which allows for the
 
 ## Cost Function for Neural Network Learning: 
 
-$$ \qquad \sum_{i=1}^m \sum_{k=1}^k [y_{k}^{i} * log(h_{\theta}*(x^{i})_{k} + (1-y_{k}^{i}) * (1 - log(h_{\theta}*(x^{i})_{k})]  + \sum_{l=1}^k \sum_{i=1}^sl \sum_{j=1}^{sl + 1} (\Theta_{j}^{l})^2  $$
+$$ \qquad \sum_{i=1}^m \sum_{k=1}^k [y_{k}^{i} * log(h_{\theta}*(x^{i})_{k} + (1-y_{k}^{i}) * (1 - log(h_{\theta}*(x^{i})_{k})]  + (\sum_{l=1}^k \sum_{i=1}^sl \sum_{j=1}^{sl + 1} (\Theta_{j}^{l})^2)  $$
 
 It looks like the Cost function is adding up all of the examples for all of the labels. 
 
