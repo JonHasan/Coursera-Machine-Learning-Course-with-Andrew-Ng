@@ -192,7 +192,19 @@ This will allow you to choose the optimal theta parameters that will minimize th
 
 ## Week 5: Neural Network Learning 
 
-So while the previous Week showed how to use neural networks in order to create classifications, in this week it was 
+## Explanation: 
+
+The previous week taught me how to perform a classification task with pre-made Theta matrices and then sending the inputs through these theta matrices and activating the layers in order to find the correct labels for each feature. However, what if the matrices are not the ones that give the highest accuracy from the start? 
+
+This requires the use of a technique called backpropagation which allows for the modifying of the theta parameters. 
+
+## Cost Function for Neural Network Learning: 
+
+### Gradient for Neural Network Learning 
+
+## Explanation of BackPropagation: 
+
+
 
 ### Results of Neural Network Learning Project 
 
