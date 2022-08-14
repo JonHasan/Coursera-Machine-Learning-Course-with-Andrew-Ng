@@ -7,7 +7,9 @@ Goes over the basic Machine Learning Techniques that are common in the field and
 
 ### Note of thanks: 
 
-I would like to thank the mentor Tom Mosher for his very helpful tutorials which have been of great assistance in finishing these project assignments. I will be placing pictures in the future, I hope. 
+Of course, Professor Ng deserves thanks for making this course and sharing his knowledge with all of his students world wide. Thank you. 
+
+I would like to thank the mentor Tom Mosher for his very helpful tutorials which have been of great assistance in finishing these project assignments. I will be placing pictures of his helpful hints in the future, I hope. 
 
 
 ## Week 2: Linear Regression 
@@ -298,6 +300,8 @@ This is all the information that will be exercised in the project for this Week.
 ## Week 7: Support Vector Machines 
 
 ## Explanation: 
+
+Support Vector Machines are an algorithms 
 
 ### Results of Support Vector Machine Project 
 
