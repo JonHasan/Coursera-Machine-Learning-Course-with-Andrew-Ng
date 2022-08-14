@@ -7,8 +7,7 @@ Goes over the basic Machine Learning Techniques that are common in the field and
 
 ### Note of thanks: 
 
-I would like to thank the mentor Tom Mosher for his very helpful tutorials which have been of great assistance in finishing these project assignments. 
-
+I would like to thank the mentor Tom Mosher for his very helpful tutorials which have been of great assistance in finishing these project assignments. I will be placing pictures in the future, I hope. 
 
 
 ## Week 2: Linear Regression 
@@ -246,6 +245,37 @@ So I can use this derivative to guide the Theta Matrices in the right direction.
 
 
 ## Week 6: Regularized Linear Regression for Bias/Variance 
+
+Explanation: 
+
+So you have made an algorithm, (in this case a linear regression with a regularization parameter), it now time to optimize the algorithm to see which parameters give the best model. 
+
+What if the model you are making doesn't accurately represent the test data? Well you can try a battery of different modifications that are suggested: 
+
+- Getting more training examples
+- Trying a smaller amount of features
+- Getting additional features
+- Trying polynomial features
+- Increasing or decreasing $\lambda$
+
+So when the hypothesis does as well with the prediction as you would like, there is still an issue here. The hypothesis is tested with this data. So if you get perfect predictions, it might mean that the model will only work with that dataset. Its like teaching a student with questions in A hw set and then placing those exact same questions in the final exam. You want to test the model's ability to generalize. 
+
+With this in mind the next phase of testing may begin. This involves creating different datasets for testing. This can be made from the original dataset by performing a 70:30 split. 70% of the data will be used to train the hypothesis and the other 30% is used to evaluate the hypothesis. 
+
+There is a new metric that needs to be considered called the Test Set Error and was summarized by Professor Ng himself. 
+
+![image](https://user-images.githubusercontent.com/20827630/184552158-571517d0-9514-4ded-b5d5-6be1a519df20.png)
+
+
+Source: Machine Learning with Andrew Ng - Week 6 - Evaluating a Hypothesis
+
+
+However, there is another set the Cross Validation set that will allow for choosing the appropriate amount of polynomial features. First Theta is chosen by training set, the different polynomial degrees are tested on CV set and the lowest error for that one is used on the test set. We can now determine whether there is High Bias(Underfitting) or High Variance(Overfitting). The different scenarios are shown in a figure from the course. 
+
+![image](https://user-images.githubusercontent.com/20827630/184552869-dec38150-0f98-4a98-af62-ac1c4cde63ea.png)
+
+
+
 
 ### Results
 
