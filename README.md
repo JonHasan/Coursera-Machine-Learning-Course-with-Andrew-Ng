@@ -1,6 +1,5 @@
 # Coursera-Machine-Learning-Course-with-Andrew-Ng
 
-$$ \qquad \sum_{i=1}^k x_i $$
 
 Introductory Machine Learning Course from Stanford  - My first MOOC started 6 years ago. Now completed after all this time... One more victory.....
 
@@ -203,7 +202,7 @@ This requires the use of a technique called backpropagation which allows for the
 
 ## Cost Function for Neural Network Learning: 
 
-
+$$ \qquad \sum_{i=1}^m x_i \sum_{k=1}^k x_i$$
 
 ### Gradient for Neural Network Learning 
 
