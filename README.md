@@ -1,4 +1,7 @@
 # Coursera-Machine-Learning-Course-with-Andrew-Ng
+
+$$ \Sigma_{i=1}^k x_i \qquad \sum_{i=1}^k x_i $$
+
 Introductory Machine Learning Course from Stanford  - My first MOOC started 6 years ago. Now completed after all this time... One more victory.....
 
 Goes over the basic Machine Learning Techniques that are common in the field and applied them to a wide variety of different Cases.
@@ -199,6 +202,8 @@ The previous week taught me how to perform a classification task with pre-made T
 This requires the use of a technique called backpropagation which allows for the modifying of the theta parameters. 
 
 ## Cost Function for Neural Network Learning: 
+
+
 
 ### Gradient for Neural Network Learning 
 
