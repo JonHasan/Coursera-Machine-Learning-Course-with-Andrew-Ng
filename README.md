@@ -202,7 +202,7 @@ This requires the use of a technique called backpropagation which allows for the
 
 ## Cost Function for Neural Network Learning: 
 
-$$ \qquad \sum_{i=1}^m \sum_{k=1}^k [y_{k}^{i} * log(h_{\theta}*(x^(i))_{k} + (1-y_{k}^{i}) * (1 - log(h_{\theta}*(x^(i))_{k})]   $$
+$$ \qquad \sum_{i=1}^m \sum_{k=1}^k [y_{k}^{i} * log(h_{\theta}*(x^{i})_{k} + (1-y_{k}^{i}) * (1 - log(h_{\theta}*(x^{i})_{k})]   $$
 
 ### Gradient for Neural Network Learning 
 
