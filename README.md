@@ -216,15 +216,29 @@ The gradient is calculated differently this time. Instead of using the gradient 
 
 #### Explanation of BackPropagation: 
 
+Here is a schematic showing a brief view of BackPropagation in action. The diagram was taken from the Machine Learning Course. 
+
+![image](https://user-images.githubusercontent.com/20827630/184551188-022ba661-3344-4a50-ad57-3509ece34c93.png)
+
+Source: Machine Learning with Andrew Ng - Week 5 - Neural Networks Learning - BackPropagation Intuition
+
 Lets say you calculate the activation results for each layer in a neural network. The activation layer for the last layer is the hypothesis you are comparing to the true value y. Determine how close the hypothesis and the true value is by subtracting the results from each other: 
 
 $\delta_{L} = a(L) -  y$
 
-Now it is required to send this difference back through the layers and see how badly the differences amplify. The equations used for that are 
+Now it is required to send this difference back through the layers. The equations used for that are 
 
 $\delta(3) = (\Theta^{3})^{T} * \delta^{4} .* g'(z^{3}) $
 
 $\delta(2) = (\Theta^{2})^{T} * \delta^{3} .* g'(z^{2}) $
+
+g' is the sigmoid gradient which is the derivative of the sigmoid function. My guess it will be a horizontal line at the beginning and will be a straight line when it curves up and down. 
+
+It is then possible to add up all of these errors and get the partial derivative. 
+
+$\Delta_{i,j}^{l} = \Delta_{i,j}^{l} + a_{j}^{l} * \delta_{i}^{l+1}$
+
+So I can use this derivative to guide the Theta Matrices in the right direction. 
 
 ### Results of Neural Network Learning Project 
 
