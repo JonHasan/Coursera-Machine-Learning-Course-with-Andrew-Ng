@@ -9,6 +9,8 @@ Goes over the basic Machine Learning Techniques that are common in the field and
 
 I would like to thank the mentor Tom Mosher for his very helpful tutorials which have been of great assistance in finishing these project assignments. 
 
+
+
 ## Week 2: Linear Regression 
 
 Purpose: Learn about a Machine Learning Technique that will draw a trendline that can relate a set of features to an output. 
@@ -65,6 +67,7 @@ This can be easily extrapolated to as many theta parameters as necessary. What h
 ### Results of Linear Regression project: 
 
 ![image](https://user-images.githubusercontent.com/20827630/184282376-a2b10c8f-26d1-41f1-8474-56685901377d.png)
+
 
 
 ## Week 3: Logistic Regression 
@@ -128,6 +131,7 @@ TBD
 ### Results of Logistic Regression Project 
 
 ![image](https://user-images.githubusercontent.com/20827630/184286261-b0e991ef-ffab-4fad-8c00-95581b298505.png)
+
 
 
 ## Week 4: Multi-Class Classification and Neural Networks 
@@ -202,7 +206,9 @@ This requires the use of a technique called backpropagation which allows for the
 
 ## Cost Function for Neural Network Learning: 
 
-$$ \qquad \sum_{i=1}^m \sum_{k=1}^k [y_{k}^{i} * log(h_{\theta}*(x^{i})_{k} + (1-y_{k}^{i}) * (1 - log(h_{\theta}*(x^{i})_{k})]   $$
+$$ \qquad \sum_{i=1}^m \sum_{k=1}^k [y_{k}^{i} * log(h_{\theta}*(x^{i})_{k} + (1-y_{k}^{i}) * (1 - log(h_{\theta}*(x^{i})_{k})]  + \sum_{l=1}^k \sum_{i=1}^sl \sum_{j=1}^{sl + 1} (\Theta_{j}^{l})^2     $$
+
+It looks like the Cost function is adding up all of the examples for all of the labels. 
 
 ### Gradient for Neural Network Learning 
 
