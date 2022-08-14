@@ -274,8 +274,21 @@ However, there is another set the Cross Validation set that will allow for choos
 
 ![image](https://user-images.githubusercontent.com/20827630/184552869-dec38150-0f98-4a98-af62-ac1c4cde63ea.png)
 
+Source: Machine Learning with Andrew Ng - Week 6 - Diagnosing Bias vs Variance 
 
 
+So how can the regularization term help with this? Well as you have seen from previous lessons, regularization can destroy the effects of polynomial features. So what $\lambda$ value will get the correct model? Well as the professor said, we can try a whole different array of regularization parameters and see which model is correct. 
+
+Professor Ng summarizes this very well with the following diagram from his course. 
+
+![image](https://user-images.githubusercontent.com/20827630/184553380-5379c104-6aa8-4743-8f02-1358a3b863db.png)
+
+Source: Machine Learning with Andrew Ng - Week 6 - Regularization Bias and Variance 
+
+You can choose the right $\lambda$ and use it to make the best hypothesis. 
+
+
+This is all the information that will be exercised in the project for this Week. 
 
 ### Results
 
@@ -283,6 +296,8 @@ However, there is another set the Cross Validation set that will allow for choos
 
 
 ## Week 7: Support Vector Machines 
+
+## Explanation: 
 
 ### Results of Support Vector Machine Project 
 
