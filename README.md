@@ -224,6 +224,7 @@ Now it is required to send this difference back through the layers and see how b
 
 $\delta(3) = (\Theta^{3})^{T} * \delta^{4} .* g'(z^{3}) $
 
+$\delta(2) = (\Theta^{2})^{T} * \delta^{3} .* g'(z^{2}) $
 
 ### Results of Neural Network Learning Project 
 
