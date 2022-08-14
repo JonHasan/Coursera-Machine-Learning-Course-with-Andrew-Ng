@@ -212,8 +212,17 @@ It looks like the Cost function is adding up all of the examples for all of the 
 
 ### Gradient for Neural Network Learning 
 
-## Explanation of BackPropagation: 
+The gradient is calculated differently this time. Instead of using the gradient used in Week 4, it is now going to be done using a tchnique called BackPropagation. 
 
+#### Explanation of BackPropagation: 
+
+Lets say you calculate the activation results for each layer in a neural network. The activation layer for the last layer is the hypothesis you are comparing to the true value y. Determine how close the hypothesis and the true value is by subtracting the results from each other: 
+
+$\delta_{L} = a(L) -  y$
+
+Now it is required to send this difference back through the layers and see how badly the differences amplify. The equations used for that are 
+
+$\delta(3) = (\Theta^{3})^{T} * \delta^{4} .* g'(z^{3}) $
 
 
 ### Results of Neural Network Learning Project 
