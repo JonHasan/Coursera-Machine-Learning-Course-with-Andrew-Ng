@@ -1,6 +1,6 @@
 # Coursera-Machine-Learning-Course-with-Andrew-Ng
 
-$$ \Sigma_{i=1}^k x_i \qquad \sum_{i=1}^k x_i $$
+$$ \qquad \sum_{i=1}^k x_i $$
 
 Introductory Machine Learning Course from Stanford  - My first MOOC started 6 years ago. Now completed after all this time... One more victory.....
 
