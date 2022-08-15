@@ -301,7 +301,11 @@ This is all the information that will be exercised in the project for this Week.
 
 ## Explanation: 
 
-Support Vector Machines are an algorithms 
+Support Vector Machines are a black-box algorithm that uses an optimization objective that is a little more difficult then the previous weeks. 
+
+The optimization objective is a play on the optimization objective for logistic regression. 
+
+To understand this modified objective, it is required to understand a modified view of the sigmoid function. 
 
 ### Results of Support Vector Machine Project 
 
