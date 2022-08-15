@@ -1,7 +1,16 @@
 # Coursera-Machine-Learning-Course-with-Andrew-Ng
-Introductory Machine Learning Course from Standford 
 
-Goes over the basic Machine Learning Techniques that are common in the field. 
+
+Introductory Machine Learning Course from Stanford  - My first MOOC started 6 years ago. Now completed after all this time... One more victory.....
+
+Goes over the basic Machine Learning Techniques that are common in the field and applied them to a wide variety of different Cases.
+
+### Note of thanks: 
+
+Of course, Professor Ng deserves thanks for making this course and sharing his knowledge with all of his students world wide. Thank you. 
+
+I would like to thank the mentor Tom Mosher for his very helpful tutorials which have been of great assistance in finishing these project assignments. I will be placing pictures of his helpful hints in the future, I hope. 
+
 
 ## Week 2: Linear Regression 
 
@@ -56,9 +65,10 @@ $\theta_{n} = \theta_{n} - \alpha * \Sigma(h_{\theta} * X - y)$
 
 This can be easily extrapolated to as many theta parameters as necessary. What happens is that the theta parameters in the hypothesis function are updated until the function matches the response variable as closely as possible. 
 
-## Results of project: 
+### Results of Linear Regression project: 
 
 ![image](https://user-images.githubusercontent.com/20827630/184282376-a2b10c8f-26d1-41f1-8474-56685901377d.png)
+
 
 
 ## Week 3: Logistic Regression 
@@ -115,13 +125,14 @@ So combining both of these functions will allow for computing the appropriate co
 
 ### Gradient Descent for Logistic Regression
 
-## Multiclass Classification 
+### Multiclass Classification 
 
 TBD
 
-## Results of Logistic Regression Project 
+### Results of Logistic Regression Project 
 
 ![image](https://user-images.githubusercontent.com/20827630/184286261-b0e991ef-ffab-4fad-8c00-95581b298505.png)
+
 
 
 ## Week 4: Multi-Class Classification and Neural Networks 
@@ -144,15 +155,43 @@ So what is in the empty brackets? It is the activation functions that show the i
 
 They are the summations of all the results from the previous neurons which are then fed into a sigmoid function. 
 
+Neural networks can be represented with the following type of diagram. 
+
+![image](https://user-images.githubusercontent.com/20827630/184502416-cc763568-df40-4f82-81ff-9c911e4df213.png)
+
+Source: Machine Learning with Andrew Ng - Week 4 - Neural Networks - Lecture_slides 
+
+In order to perform the prediction phase it is necessary to perform something called a feedForward operation. 
+
+All this operation is doing is multiplying the inputs with the Theta Matrices, activating the results with sigmoid function and adding bias units whenever necessary. 
+
+The resulting hypothesis function will appropriately classify all the examples with appropriate label. 
+
+The equations used in the feedforward operation are shown below for the example network. 
+
 This is shown below and was taken from the course. 
 
 ![image](https://user-images.githubusercontent.com/20827630/184272996-f8a6c9b9-48b6-441e-9b2e-b4fc5063191c.png)
  
 Source: Machine Learning with Andrew Ng - Week 4 - Neural Networks - Model Representation l
 
-Using this we can make function approximators for different boolean functions like AND or NOR. 
+### Cost function for neural networks in classification 
 
-# Results of Neural Network MultiClassification Project 
+The Cost function used by neural networks for classification is the same as the one used for Logistic Regression. It is shwon below 
+
+$J(\Theta) = \frac{-1}{m} * \Sigma(y^{i} * log(h_{\theta} * X) + (1 - y^{i}) * (1 - log(h_{\theta} * X)))$
+
+This is applied to each of the output nodes to see which class accurately represents the training example in the X matrix. 
+
+### Gradient for neural networks in classification 
+
+The gradient is the derivative of the Cost function with regard to the theta parameters. It is shown below. 
+
+$\frac{d(J_{\Theta})}{d_{\Theta_{j}} = -\frac{1}{m} * \Sigma(h_{\theta} * X - y) * X$
+
+This will allow you to choose the optimal theta parameters that will minimize the Cost Functions for each class label. 
+
+### Results of Neural Network MultiClassification Project 
 
 ![image](https://user-images.githubusercontent.com/20827630/184469799-1eca7fac-b6a7-4e63-a3fc-e0ae305497c7.png)
 
@@ -160,7 +199,47 @@ Using this we can make function approximators for different boolean functions li
 
 ## Week 5: Neural Network Learning 
 
-So while the previous Week showed how to use neural networks in order to create classifications, in this week it was 
+## Explanation: 
+
+The previous week taught me how to perform a classification task with pre-made Theta matrices and then sending the inputs through these theta matrices and activating the layers in order to find the correct labels for each feature. However, what if the matrices are not the ones that give the highest accuracy from the start? 
+
+This requires the use of a technique called backpropagation which allows for the modifying of the theta parameters. 
+
+## Cost Function for Neural Network Learning: 
+
+$$ \qquad \sum_{i=1}^m \sum_{k=1}^k [y_{k}^{i} * log(h_{\theta}*(x^{i})_{k} + (1-y_{k}^{i}) * (1 - log(h_{\theta}*(x^{i})_{k})]  + \sum_{l=1}^{l + 1} \sum_{i=1}^sl \sum_{j=1}^{sl + 1} (\Theta_{j}^{l})^2)  $$
+
+It looks like the Cost function is adding up all of the examples for all of the labels. 
+
+### Gradient for Neural Network Learning 
+
+The gradient is calculated differently this time. Instead of using the gradient used in Week 4, it is now going to be done using a tchnique called BackPropagation. 
+
+#### Explanation of BackPropagation: 
+
+Here is a schematic showing a brief view of BackPropagation in action. The diagram was taken from the Machine Learning Course. 
+
+![image](https://user-images.githubusercontent.com/20827630/184551188-022ba661-3344-4a50-ad57-3509ece34c93.png)
+
+Source: Machine Learning with Andrew Ng - Week 5 - Neural Networks Learning - BackPropagation Intuition
+
+Lets say you calculate the activation results for each layer in a neural network. The activation layer for the last layer is the hypothesis you are comparing to the true value y. Determine how close the hypothesis and the true value is by subtracting the results from each other: 
+
+$\delta_{L} = a(L) -  y$
+
+Now it is required to send this difference back through the layers. The equations used for that are 
+
+$\delta(3) = (\Theta^{3})^{T} * \delta^{4} .* g'(z^{3}) $
+
+$\delta(2) = (\Theta^{2})^{T} * \delta^{3} .* g'(z^{2}) $
+
+g' is the sigmoid gradient which is the derivative of the sigmoid function. My guess it will be a horizontal line at the beginning and will be a straight line when it curves up and down. 
+
+It is then possible to add up all of these errors and get the partial derivative. 
+
+$\Delta_{i,j}^{l} = \Delta_{i,j}^{l} + a_{j}^{l} * \delta_{i}^{l+1}$
+
+So I can use this derivative to guide the Theta Matrices in the right direction. 
 
 ### Results of Neural Network Learning Project 
 
@@ -169,12 +248,64 @@ So while the previous Week showed how to use neural networks in order to create 
 
 ## Week 6: Regularized Linear Regression for Bias/Variance 
 
+Explanation: 
+
+So you have made an algorithm, (in this case a linear regression with a regularization parameter), it now time to optimize the algorithm to see which parameters give the best model. 
+
+What if the model you are making doesn't accurately represent the test data? Well you can try a battery of different modifications that are suggested: 
+
+- Getting more training examples
+- Trying a smaller amount of features
+- Getting additional features
+- Trying polynomial features
+- Increasing or decreasing $\lambda$
+
+So when the hypothesis does as well with the prediction as you would like, there is still an issue here. The hypothesis is tested with this data. So if you get perfect predictions, it might mean that the model will only work with that dataset. Its like teaching a student with questions in A hw set and then placing those exact same questions in the final exam. You want to test the model's ability to generalize. 
+
+With this in mind the next phase of testing may begin. This involves creating different datasets for testing. This can be made from the original dataset by performing a 70:30 split. 70% of the data will be used to train the hypothesis and the other 30% is used to evaluate the hypothesis. 
+
+There is a new metric that needs to be considered called the Test Set Error and was summarized by Professor Ng himself. 
+
+![image](https://user-images.githubusercontent.com/20827630/184552158-571517d0-9514-4ded-b5d5-6be1a519df20.png)
+
+
+Source: Machine Learning with Andrew Ng - Week 6 - Evaluating a Hypothesis
+
+
+However, there is another set the Cross Validation set that will allow for choosing the appropriate amount of polynomial features. First Theta is chosen by training set, the different polynomial degrees are tested on CV set and the lowest error for that one is used on the test set. We can now determine whether there is High Bias(Underfitting) or High Variance(Overfitting). The different scenarios are shown in a figure from the course. 
+
+![image](https://user-images.githubusercontent.com/20827630/184552869-dec38150-0f98-4a98-af62-ac1c4cde63ea.png)
+
+Source: Machine Learning with Andrew Ng - Week 6 - Diagnosing Bias vs Variance 
+
+
+So how can the regularization term help with this? Well as you have seen from previous lessons, regularization can destroy the effects of polynomial features. So what $\lambda$ value will get the correct model? Well as the professor said, we can try a whole different array of regularization parameters and see which model is correct. 
+
+Professor Ng summarizes this very well with the following diagram from his course. 
+
+![image](https://user-images.githubusercontent.com/20827630/184553380-5379c104-6aa8-4743-8f02-1358a3b863db.png)
+
+Source: Machine Learning with Andrew Ng - Week 6 - Regularization Bias and Variance 
+
+You can choose the right $\lambda$ and use it to make the best hypothesis. 
+
+
+This is all the information that will be exercised in the project for this Week. 
+
 ### Results
 
 ![image](https://user-images.githubusercontent.com/20827630/184470566-a8f478f1-0ebe-4ec7-888c-6d3ef039afed.png)
 
 
 ## Week 7: Support Vector Machines 
+
+## Explanation: 
+
+Support Vector Machines are a black-box algorithm that uses an optimization objective that is a little more difficult then the previous weeks. 
+
+The optimization objective is a play on the optimization objective for logistic regression. 
+
+To understand this modified objective, it is required to understand a modified view of the sigmoid function. 
 
 ### Results of Support Vector Machine Project 
 
@@ -183,4 +314,22 @@ So while the previous Week showed how to use neural networks in order to create 
 
 ## Week 8: K-means Clustering and PCA
 
+### Explanation: 
+
+### Cost function for K-means and PCA
+
+### Results of K-means Clustering and PCA Project 
+
+![image](https://user-images.githubusercontent.com/20827630/184471056-49379698-d58d-4381-933a-d09ddbf96a75.png)
+
 ## Week 9: Anamoly Detection and Recommender Systems 
+
+### Explanation: 
+
+### Cost function for Anomaly Detection and Recommender Systems. 
+
+### Results of Anomaly Detection and Recommender systems 
+
+![image](https://user-images.githubusercontent.com/20827630/184471099-8c76f324-9498-4f65-be91-87334682f227.png)
+
+
