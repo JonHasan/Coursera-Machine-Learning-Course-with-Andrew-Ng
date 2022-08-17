@@ -325,7 +325,7 @@ So now instead of the logistic Cost function which uses exponentials, we can now
 
 ## Cost Function for Support Vector Machines 
 
-min C $$ \Sigma_{i=1}^{m} y^{(i)} * cost_{1}($\Theta^{T}*x^{i}) + (1 - y^{(i)}) * cost_{0}($\Theta^{T}*x^{i}) + \frac{1}{2} *\Sigma_{i=1}^{n} \theta_{j}^{2} $$
+$ \Sigma_{i=1}^{m} y^{(i)} * cost_{1}($\Theta^{T}*x^{i}) + (1 - y^{(i)}) * cost_{0}($\Theta^{T}*x^{i}) + \frac{1}{2} *\Sigma_{i=1}^{n} \theta_{j}^{2} $
 
 
 ### Results of Support Vector Machine Project 
