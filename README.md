@@ -307,6 +307,27 @@ The optimization objective is a play on the optimization objective for logistic 
 
 To understand this modified objective, it is required to understand a modified view of the sigmoid function. 
 
+Instead of z in the sigmoid function, replace it with its other representation which is $\Theta^{T}*X$
+
+It is seen that for both cost functions that comprise logistic regression, when y = 1, the cost function gives a proper classification when $\Theta^{T} * X $ is very large. For y = 0, the other cost function shows a proper classification when $\Theta^{T} * X $ is very small. So how can can we use this information? Well, we can simplify the logistic equation into a piecewise function. 
+
+The Cost function for y = 1 can be reduced to a line with a negative slope connected to a line with 0 slope. 
+
+The Cost function for y = 0 can be reduced to a line with a positive slope that extends from a line with 0 slope. 
+
+This is shown in the diagram taken from the course. 
+
+![image](https://user-images.githubusercontent.com/20827630/185022952-5d3a71c9-bfbc-4943-b448-4fc6ca2716f8.png)
+
+Source: Machine Learning with Andrew Ng - Week 7 - Support Vector Machines - Lecture Slides 
+
+So now instead of the logistic Cost function which uses exponentials, we can now use these modified cost functions which don't have exponentials. 
+
+## Cost Function for Support Vector Machines 
+
+$min C * \Sigma_{i=1}^{m}[y^{(i)} * cost_{1}($\Theta^{T}*x^{i}) + (1 - y^{(i)}) * cost_{0}($\Theta^{T}*x^{i})] + \frac{1}{2} * \Sigma_{i=1}^{n} \theta_{j}^{2}
+
+
 ### Results of Support Vector Machine Project 
 
 ![image](https://user-images.githubusercontent.com/20827630/184470808-cf0fb79e-3c8f-44fb-a0f7-3115078c8c02.png)
