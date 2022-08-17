@@ -327,6 +327,28 @@ So now instead of the logistic Cost function which uses exponentials, we can now
 
 $ \Sigma_{i=1}^{m} y^{(i)} * cost_{1}($\Theta^{T}*x^{i}) + (1 - y^{(i)}) * cost_{0}($\Theta^{T}*x^{i}) + \frac{1}{2} *\Sigma_{i=1}^{n} \theta_{j}^{2} $
 
+Now instead of using lambda to control the shape of the function, we are using C to control the slope of the decision boundary which is a straight line. This C parameter can be decreased to make a vertical line or decreased to make a horizontal line. Finding the correct C parameter will allow to correctly separate the different data classes. 
+
+The Extra term at the end is responsible for creating the margins that can make more accurate decision classifiers. 
+
+### Math for Large Margin Classification 
+
+TBD
+
+### Kernels 
+
+Okay, so the SVM seems to perform well on data that is linearly separable, that is to say the data points for each class could be separated with a linear decision boundary. What about data that requires a non linear decision boundary? The professor showed an example as so: 
+
+![image](https://user-images.githubusercontent.com/20827630/185027221-ebda4f14-b840-4360-ab46-5dd7355d8cd8.png)
+
+Source: Machine Learning with Andrew Ng - Week 7 - Support Vector Machines
+
+The decision boundary is an oval shape and is comprised of many polynomial features. This is very inconvenient way to represent the boundary. Is there perhaps a more convenient way? 
+
+
+Time to put that mathematical creativity to good use again. 
+
+
 
 ### Results of Support Vector Machine Project 
 
