@@ -348,6 +348,18 @@ The decision boundary is an oval shape and is comprised of many polynomial featu
 
 Time to put that mathematical creativity to good use again. 
 
+This time, it was suggested to use landmarks in order to calculate similarity metrics. The new x values are then compared to these landmarks and this result becomes a feature in the new polynomial which acts as the hypothesis.
+
+So this is interesting, if x is close to any of these landmarks, the result of the hypothesis function will be greater then the threshold value so you would predict 1. If x is significantly far from any of these landmarks, the hypothesis function will not be above the threshold value so it will return 0. 
+
+These landmarks are kind of acting like a Sonar detector. If one of these landmarks detects an X coordinate if its close enough, it will predict as a whole that the response is the classification of 1. If the sonar detectors can't detect the point coordinate, the response is the classification of 0. 
+
+![image](https://user-images.githubusercontent.com/20827630/185538994-00cd1472-dc5f-47b3-8e07-40563b7e6541.png)
+
+Source: Machine Learning with Andrew Ng - Week 7 - Support Vector Machines - Kernels 1 
+
+These landmarks have to come from somewhere though. Where should they be taken from? They are taken from the coordinate pairs (x,y). Similarity functions are computed 
+using the x coordinate as the landmark. 
 
 
 ### Results of Support Vector Machine Project 
