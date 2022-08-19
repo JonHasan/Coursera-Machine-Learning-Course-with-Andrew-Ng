@@ -11,8 +11,9 @@ Of course, Professor Ng deserves thanks for making this course and sharing his k
 
 I would like to thank the mentor Tom Mosher for his very helpful tutorials which have been of great assistance in finishing these project assignments. I will be placing pictures of his helpful hints in the future, I hope. 
 
+## Supervised Learning Methods 
 
-## Week 2: Linear Regression 
+### Week 2: Linear Regression 
 
 Purpose: Learn about a Machine Learning Technique that will draw a trendline that can relate a set of features to an output. 
 ### Explanation
@@ -57,7 +58,7 @@ The theta parameters are modified so that the distance between the points is min
 
 Source: Machine Learning Course by Andrew Ng - Week 1 - Cost Function- Intuition || 
 
-### Gradient Descent for Linear Regression
+#### Gradient Descent for Linear Regression
 
 In order to fit the hypothesis to the response variable, it is necessary to change the theta parameters. This is done with a technique called gradient descent. It uses the following formula: 
 
@@ -65,15 +66,15 @@ $\theta_{n} = \theta_{n} - \alpha * \Sigma(h_{\theta} * X - y)$
 
 This can be easily extrapolated to as many theta parameters as necessary. What happens is that the theta parameters in the hypothesis function are updated until the function matches the response variable as closely as possible. 
 
-### Results of Linear Regression project: 
+#### Results of Linear Regression project: 
 
 ![image](https://user-images.githubusercontent.com/20827630/184282376-a2b10c8f-26d1-41f1-8474-56685901377d.png)
 
 
 
-## Week 3: Logistic Regression 
+### Week 3: Logistic Regression 
 
-## Explanation: 
+#### Explanation: 
 
 Logistic Regression was the next important technique taught in the course. 
 
@@ -123,21 +124,21 @@ Source: Machine Learning Course By Andrew NG - Week 3 Reading: Cost Function
 
 So combining both of these functions will allow for computing the appropriate cost for the hypothesis function. 
 
-### Gradient Descent for Logistic Regression
+#### Gradient Descent for Logistic Regression
 
-### Multiclass Classification 
+#### Multiclass Classification 
 
 TBD
 
-### Results of Logistic Regression Project 
+#### Results of Logistic Regression Project 
 
 ![image](https://user-images.githubusercontent.com/20827630/184286261-b0e991ef-ffab-4fad-8c00-95581b298505.png)
 
 
 
-## Week 4: Multi-Class Classification and Neural Networks 
+### Week 4: Multi-Class Classification and Neural Networks 
 
-### Explanation:
+#### Explanation:
 
 This week went over one of the most recent additions to the machine learning engineeers toolkit called a neural network. It is an algorithm inspired by the inner workings of the brain. It is believed that the brain is using something called "The Master Algorithm" which allows different parts of the brain that are responsible for one function i.e. like hearing and training that brain tissue to be used for seeing things. The brain is comprised of a particular type of cell called a neuron. It has dendrite that accept inputs and sends the result through to the axon which is the output. The algorithm shown in this week attempts to recreate this powerful functionality. 
 
@@ -197,25 +198,25 @@ This will allow you to choose the optimal theta parameters that will minimize th
 
 
 
-## Week 5: Neural Network Learning 
+### Week 5: Neural Network Learning 
 
-## Explanation: 
+#### Explanation: 
 
 The previous week taught me how to perform a classification task with pre-made Theta matrices and then sending the inputs through these theta matrices and activating the layers in order to find the correct labels for each feature. However, what if the matrices are not the ones that give the highest accuracy from the start? 
 
 This requires the use of a technique called backpropagation which allows for the modifying of the theta parameters. 
 
-## Cost Function for Neural Network Learning: 
+#### Cost Function for Neural Network Learning: 
 
 $$ \qquad \sum_{i=1}^m \sum_{k=1}^k [y_{k}^{i} * log(h_{\theta}*(x^{i})_{k} + (1-y_{k}^{i}) * (1 - log(h_{\theta}*(x^{i})_{k})]  + \sum_{l=1}^{l + 1} \sum_{i=1}^sl \sum_{j=1}^{sl + 1} (\Theta_{j}^{l})^2)  $$
 
 It looks like the Cost function is adding up all of the examples for all of the labels. 
 
-### Gradient for Neural Network Learning 
+#### Gradient for Neural Network Learning 
 
 The gradient is calculated differently this time. Instead of using the gradient used in Week 4, it is now going to be done using a tchnique called BackPropagation. 
 
-#### Explanation of BackPropagation: 
+##### Explanation of BackPropagation: 
 
 Here is a schematic showing a brief view of BackPropagation in action. The diagram was taken from the Machine Learning Course. 
 
@@ -246,9 +247,9 @@ So I can use this derivative to guide the Theta Matrices in the right direction.
 ![image](https://user-images.githubusercontent.com/20827630/184470456-560fb781-27d8-4d60-88be-59b68139a62f.png)
 
 
-## Week 6: Regularized Linear Regression for Bias/Variance 
+### Week 6: Regularized Linear Regression for Bias/Variance 
 
-Explanation: 
+#### Explanation: 
 
 So you have made an algorithm, (in this case a linear regression with a regularization parameter), it now time to optimize the algorithm to see which parameters give the best model. 
 
@@ -292,14 +293,14 @@ You can choose the right $\lambda$ and use it to make the best hypothesis.
 
 This is all the information that will be exercised in the project for this Week. 
 
-### Results
+#### Results
 
 ![image](https://user-images.githubusercontent.com/20827630/184470566-a8f478f1-0ebe-4ec7-888c-6d3ef039afed.png)
 
 
-## Week 7: Support Vector Machines 
+### Week 7: Support Vector Machines 
 
-## Explanation: 
+#### Explanation: 
 
 Support Vector Machines are a black-box algorithm that uses an optimization objective that is a little more difficult then the previous weeks. 
 
@@ -331,11 +332,11 @@ Now instead of using lambda to control the shape of the function, we are using C
 
 The Extra term at the end is responsible for creating the margins that can make more accurate decision classifiers. 
 
-### Math for Large Margin Classification 
+#### Math for Large Margin Classification 
 
 TBD
 
-### Kernels 
+#### Kernels 
 
 Okay, so the SVM seems to perform well on data that is linearly separable, that is to say the data points for each class could be separated with a linear decision boundary. What about data that requires a non linear decision boundary? The professor showed an example as so: 
 
@@ -362,28 +363,29 @@ These landmarks have to come from somewhere though. Where should they be taken f
 using the x coordinate as the landmark. 
 
 
-### Results of Support Vector Machine Project 
+#### Results of Support Vector Machine Project 
 
 ![image](https://user-images.githubusercontent.com/20827630/184470808-cf0fb79e-3c8f-44fb-a0f7-3115078c8c02.png)
 
+## Unsupervised Learning Methods 
 
-## Week 8: K-means Clustering and PCA
+### Week 8: K-means Clustering and PCA
 
-### Explanation: 
+#### Explanation: 
 
-### Cost function for K-means and PCA
+#### Cost function for K-means and PCA
 
-### Results of K-means Clustering and PCA Project 
+#### Results of K-means Clustering and PCA Project 
 
 ![image](https://user-images.githubusercontent.com/20827630/184471056-49379698-d58d-4381-933a-d09ddbf96a75.png)
 
-## Week 9: Anamoly Detection and Recommender Systems 
+### Week 9: Anamoly Detection and Recommender Systems 
 
-### Explanation: 
+#### Explanation: 
 
-### Cost function for Anomaly Detection and Recommender Systems. 
+#### Cost function for Anomaly Detection and Recommender Systems. 
 
-### Results of Anomaly Detection and Recommender systems 
+#### Results of Anomaly Detection and Recommender systems 
 
 ![image](https://user-images.githubusercontent.com/20827630/184471099-8c76f324-9498-4f65-be91-87334682f227.png)
 
