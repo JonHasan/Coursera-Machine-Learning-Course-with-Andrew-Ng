@@ -369,11 +369,12 @@ using the x coordinate as the landmark.
 
 ## Unsupervised Learning Methods 
 
-What is unsupervised learning? It is a way of drawing conclusions without being given a training set to work with. This tends to be useful for grouping things together also known by its alternate name of Clustering. 
+What is unsupervised learning? It is a way of drawing conclusions without being given a training set to work with. This tends to be useful for grouping things together also known by its alternate name of Clustering. Its useful for distinguishing points from each other and has been used in astronomy, social network analysis, Market Segmentation and Organizing computer clusters. 
 
 ### Week 8: K-means Clustering and PCA
 
 #### Explanation: 
+
 
 
 
