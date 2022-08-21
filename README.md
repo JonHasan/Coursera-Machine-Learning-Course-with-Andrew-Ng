@@ -377,12 +377,16 @@ What is unsupervised learning? It is a way of drawing conclusions without being 
 
 This unsupervised learning algorithm looks at a dataset and places K number of clusters in the dataset. Assign each data point to its closest cluster and then for each cluster, recompute the new centroid location by averaging all the values assigned to that cluster. This process then repeats until the most optimum cluster placement is achieved. 
 
+
+#### Cost function for K-means and PCA
+
 The closest cluster to each data point is found through the following minimization objective. 
 
  min k || $x^{i} - \mu_{k}$||
+ 
+The Cost function is merely choosing the smallest norm between each datapoint and prospective centroid and it is referred to as the distortion function.
 
 
-#### Cost function for K-means and PCA
 
 #### Results of K-means Clustering and PCA Project 
 
