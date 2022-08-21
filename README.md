@@ -373,7 +373,7 @@ What is unsupervised learning? It is a way of drawing conclusions without being 
 
 ### Week 8: K-means Clustering and PCA
 
-#### Explanation: 
+#### Explanation for K-means: 
 
 This unsupervised learning algorithm looks at a dataset and places K number of clusters in the dataset. Assign each data point to its closest cluster and then for each cluster, recompute the new centroid location by averaging all the values assigned to that cluster. This process then repeats until the most optimum cluster placement is achieved. 
 
@@ -386,6 +386,10 @@ The closest cluster to each data point is found through the following minimizati
  
 The Cost function is merely choosing the smallest norm between each datapoint and prospective centroid and it is referred to as the distortion function.
 
+
+#### Explanation for PCA
+
+PCA stands for Principal Component Analysis. Imagine if you have a dataset comprised of thirty features. 
 
 
 #### Results of K-means Clustering and PCA Project 
