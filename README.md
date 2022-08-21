@@ -379,7 +379,7 @@ This unsupervised learning algorithm looks at a dataset and places K number of c
 
 The closest cluster to each data point is found through the following minimization objective. 
 
-$ min_{k} ||x^{i} - \mu_{k}||^{2}$
+ min k || $x^{i} - \mu_{k}$||
 
 
 #### Cost function for K-means and PCA
