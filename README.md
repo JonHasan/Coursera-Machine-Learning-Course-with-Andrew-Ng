@@ -369,13 +369,17 @@ using the x coordinate as the landmark.
 
 ## Unsupervised Learning Methods 
 
-What is unsupervised learning? It is a way of drawing conclusions without being given a training set to work with. This tends to be useful for grouping things together also known by its alternate name of Clustering. Its useful for distinguishing points from each other and has been used in astronomy, social network analysis, Market Segmentation and Organizing computer clusters. 
+What is unsupervised learning? It is a way of drawing conclusions without being given a training set to work with. This tends to be useful for grouping things together also known by its alternate name of Clustering. Its useful for distinguishing points from each other and has been used in astronomy, social network analysis, Market Segmentation and Organizing computer clusters. In this section, the K-means clustering algorithm will be analyzed. 
 
 ### Week 8: K-means Clustering and PCA
 
 #### Explanation: 
 
+This unsupervised learning algorithm looks at a dataset and places K number of clusters in the dataset. Assign each data point to its closest cluster and then for each cluster, recompute the new centroid location by averaging all the values assigned to that cluster. This process then repeats until the most optimum cluster placement is achieved. 
 
+The closest cluster to each data point is found through the following minimization objective. 
+
+$ min_{k} ||x^{i} - \mu_{k}||^{2}$
 
 
 #### Cost function for K-means and PCA
