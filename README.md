@@ -422,7 +422,7 @@ Subtract this mean value from the feature values to get normalized values.
 
 It is then time to compute the covariance matrix which is a matrix that shows the variance between each pair of datapoints. 
 
-$\Sigma = \frac{1}{m} * \Sigma(x^{i} * x^{i}^{T})$
+$ \Sigma = \frac{1}{m} * \Sigma(x^{i} * x^{i}^{T}) $
 
 
 
