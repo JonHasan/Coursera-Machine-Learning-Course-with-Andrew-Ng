@@ -424,7 +424,11 @@ It is then time to compute the covariance matrix which is a matrix that shows th
 
 $$\Sigma = \frac{1}{m} * \Sigma(x^{i} * (x^{i})^{T})  $$
 
+From this matrix, it is possible to find eigenvectors of that matrix through singular value decomposition. These are the "components" referenced in Principal component analysis. 
 
+Now you just need to decide how many components you want to keep. These are the k top components. This is the reduced Eigenvector matrix U'. Simply multiply by the x vector to get the compressed representation z. 
+
+One can recover the approximate original representation by multiplying Ureduce with the compressed representation. 
 
 #### Results of K-means Clustering and PCA Project 
 
