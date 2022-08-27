@@ -375,7 +375,11 @@ What is unsupervised learning? It is a way of drawing conclusions without being 
 
 #### Explanation for K-means: 
 
-This unsupervised learning algorithm looks at a dataset and places K number of clusters in the dataset. Assign each data point to its closest cluster and then for each cluster, recompute the new centroid location by averaging all the values assigned to that cluster. This process then repeats until the most optimum cluster placement is achieved. 
+This unsupervised learning algorithm looks at a dataset and places K number of clusters in the dataset. Assign each data point to its closest cluster and then for each cluster, recompute the new centroid location by averaging all the values assigned to that cluster. This process then repeats until the most optimum cluster placement is achieved. The end result looks something like this. 
+
+![image](https://user-images.githubusercontent.com/20827630/187011219-929d22f8-1107-498b-a6d2-73b32ceac919.png)
+
+Source: Machine Learning with Andrew Ng - Week 8 - Lecture Slides 
 
 
 #### Cost function for K-means and PCA
@@ -386,10 +390,40 @@ The closest cluster to each data point is found through the following minimizati
  
 The Cost function is merely choosing the smallest norm between each datapoint and prospective centroid and it is referred to as the distortion function.
 
+#### Important considerations
+Its important for this algorithm that you engage in random initialization of centroids. The number of centroids should be less then the number of examples. Choose some 
+training examples to serve as the centroids. Make sure to do these random initializations many times to determing best distortion since local optima is a problem.
+
+In addition, the number of ideal clusters can not only be found using the elbow method as shown below but can be decided upon with domain knowledge i.e. t-shirt sizes. 
+
+![image](https://user-images.githubusercontent.com/20827630/187012932-1b05f74a-ed27-4fcb-b45b-c2b470c3e1aa.png)
+
+Source: Machine Learning with Andrew Ng- Week 8 - KMeans Clustering -  Lecture Slides 
 
 #### Explanation for PCA
 
-PCA stands for Principal Component Analysis. Imagine if you have a dataset comprised of thirty features. 
+PCA stands for Principal Component Analysis. Imagine if you have a dataset comprised of thirty features. There are many different relationships to explore. If you wanted to make the investigation a little easier, you could use what is called a dimensionality reduction technique. If the feature space is two dimensional, you could try and place that data into one dimension for example. 
+
+The way this is done is to draw a line through the dataset in such a way that the sum of squares between the points and that line are minimized. 
+
+![image](https://user-images.githubusercontent.com/20827630/187014470-169e22dd-fd50-4076-a001-413e97d53310.png)
+
+Source: Machine Learning with Andrew Ng - Week 8 - Principal Component Analysis - Lecture Slides 
+
+Of course, this extends to higher dimensions. If you want to reduce a three dimensional dataset to a two dimensional dataset you need to find two lines that the points have the smallest sum of squares distance from. 
+
+#### PCA algorithm 
+
+So in order to perform this dimensionality reduction technique, first you need to perform feature scaling. 
+
+$\mu_{j} = \frac{1}{m} * \Sigma(x_{i})$
+
+Subtract this mean value from the feature values to get normalized values. 
+
+It is then time to compute the covariance matrix which is a matrix that shows the variance between each pair of datapoints. 
+
+$\Sigma = \frac{1}{m} * \Sigma(x^{i} * x^{i}^{T})_{n = 1)$
+
 
 
 #### Results of K-means Clustering and PCA Project 
