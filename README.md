@@ -416,13 +416,13 @@ Of course, this extends to higher dimensions. If you want to reduce a three dime
 
 So in order to perform this dimensionality reduction technique, first you need to perform feature scaling. 
 
-$\mu_{j} = \frac{1}{m} * \Sigma(x_{i})$
+$$\mu_{j} = \frac{1}{m} * \Sigma(x_{i})$$
 
 Subtract this mean value from the feature values to get normalized values. 
 
 It is then time to compute the covariance matrix which is a matrix that shows the variance between each pair of datapoints. 
 
-$ \Sigma = \frac{1}{m} * \Sigma(x^{i} * x^{i}^{T}) $
+$$ \Sigma = \frac{1}{m} * \Sigma(x^{i} * x^{i}^{T}) $$
 
 
 
