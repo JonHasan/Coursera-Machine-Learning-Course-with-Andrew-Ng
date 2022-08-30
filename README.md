@@ -428,7 +428,14 @@ From this matrix, it is possible to find eigenvectors of that matrix through sin
 
 Now you just need to decide how many components you want to keep. These are the k top components. This is the reduced Eigenvector matrix U'. Simply multiply by the x vector to get the compressed representation z. 
 
-One can recover the approximate original representation by multiplying Ureduce with the compressed representation. 
+One can recover the approximate original representation by multiplying Ureduce with the compressed representation. Note however, that since information was lost to create the compressed representation, one can only require an approximation of the original representation. 
+
+#### Deciding on number of components 
+
+So how are the number of components decided. Well a metric is used to choose the number of components that can preserve a certain level of variance. In this case, it is desired to preserve 99% of the variance. The number of components necessary to do this can be represented with the formula shown in the following slide from the course. 
+
+![image](https://user-images.githubusercontent.com/20827630/187326417-7d01576d-453a-4e31-a02e-fbfa43f16080.png)
+Source: Machine Learning with Andrew Ng - Week 8 - PCA - Choosing Particular Number of Components
 
 #### Results of K-means Clustering and PCA Project 
 
