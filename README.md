@@ -388,7 +388,7 @@ The closest cluster to each data point is found through the following minimizati
 
  min k || $x^{i} - \mu_{k}$||
  
-The Cost function is merely choosing the smallest norm between each datapoint and prospective centroid and it is referred to as the distortion function.
+The Cost function is merely choosing the smallest norm (distance) between each datapoint and prospective centroid and it is referred to as the distortion function.
 
 #### Important considerations
 Its important for this algorithm that you engage in random initialization of centroids. The number of centroids should be less then the number of examples. Choose some 
@@ -436,6 +436,10 @@ So how are the number of components decided. Well a metric is used to choose the
 
 ![image](https://user-images.githubusercontent.com/20827630/187326417-7d01576d-453a-4e31-a02e-fbfa43f16080.png)
 Source: Machine Learning with Andrew Ng - Week 8 - PCA - Choosing Particular Number of Components
+
+There is another way to do this though. This involves using the matrix S which is a square matrix that has values on the diagonal. It is possible to choose only a subset of these values on the diagonal and add them up. Then divide the values by total summation of the diagonal to see what the variance is. The number of entries in the numerator correspond to the number of components. 
+
+So the best time to use the PCA alrogithm is when one wants to compress the dataset so it doesn't take as much space, reducing the size of the input feature space and to visualize high dimensional data in an easier way. It is recommended to try to use the original dataset first and if necessary go to PCA. 
 
 #### Results of K-means Clustering and PCA Project 
 
