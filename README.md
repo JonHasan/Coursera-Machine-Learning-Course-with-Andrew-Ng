@@ -449,6 +449,8 @@ So the best time to use the PCA alrogithm is when one wants to compress the data
 
 #### Explanation: 
 
+Anomaly detection involves trying to distinguish an odd training example from the others using gaussian functions. An example used in the machine learning course was the detection of faulty airplane engines. The good examples were clustered around a point but there was one example that was way outside the cluster. As a result, it was desired to use an epsilon cutoff. 
+
 #### Cost function for Anomaly Detection and Recommender Systems. 
 
 #### Results of Anomaly Detection and Recommender systems 
