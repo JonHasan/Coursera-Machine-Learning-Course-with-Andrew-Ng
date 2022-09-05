@@ -449,9 +449,21 @@ So the best time to use the PCA alrogithm is when one wants to compress the data
 
 #### Explanation: 
 
-Anomaly detection involves trying to distinguish an odd training example from the others using gaussian functions. An example used in the machine learning course was the detection of faulty airplane engines. The good examples were clustered around a point but there was one example that was way outside the cluster. As a result, it was desired to use an epsilon cutoff. All of the good examples seemed to sit within a certain circular area. The fail example lies outside of that circular area. 
+Anomaly detection involves trying to distinguish an odd training example from the others using gaussian functions. An example used in the machine learning course was the detection of faulty airplane engines. The good examples were clustered around a point but there was one example that was way outside the cluster. 
+
+![image](https://user-images.githubusercontent.com/20827630/188342085-0c5b8065-6fdd-46e4-bbd7-4e639efb56b3.png)
+Source: Machine Learning with Andrew Ng - Week 9 - Anomaly Detection 
+
+As a result, it was desired to use an epsilon cutoff. All of the good examples seemed to sit within a certain circular area. The fail example lies outside of that circular area. This was shown in the slide from the course.  
+
+![image](https://user-images.githubusercontent.com/20827630/188342331-3ec7e39f-941e-4f47-9049-5ecff5467fe8.png)
+Source: Machine Learning with Andrew Ng - Week 9 - Anomaly Detection 
+
+So how can the fails be distinguished from the passes in this case? As stated before, gaussian functions seem like a useful way to do this. 
 
 #### Cost function for Anomaly Detection and Recommender Systems. 
+
+A gaussian function shows a distribution of likely values where it peaks in the middle and tapers off at the ends. This is represented by a mean and a standard deviation. 
 
 #### Results of Anomaly Detection and Recommender systems 
 
