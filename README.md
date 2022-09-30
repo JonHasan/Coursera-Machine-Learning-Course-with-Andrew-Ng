@@ -449,7 +449,7 @@ So the best time to use the PCA alrogithm is when one wants to compress the data
 
 #### Explanation: 
 
-Anomaly detection involves trying to distinguish an odd training example from the others using gaussian functions. An example used in the machine learning course was the detection of faulty airplane engines. The good examples were clustered around a point but there was one example that was way outside the cluster. 
+Anomaly detection involves trying to distinguish a bad result from the others. The failure modes though can be numerous. An example used in the machine learning course was the detection of faulty airplane engines. The good examples were clustered around a point but there was one example that was way outside the cluster. This fail could be the result of a bad bolt, bad piston, bad sparkplug etc. This would be noted by the anomaly detection system.
 
 ![image](https://user-images.githubusercontent.com/20827630/188342085-0c5b8065-6fdd-46e4-bbd7-4e639efb56b3.png)
 Source: Machine Learning with Andrew Ng - Week 9 - Anomaly Detection 
@@ -459,11 +459,20 @@ As a result, it was desired to use an epsilon cutoff. All of the good examples s
 ![image](https://user-images.githubusercontent.com/20827630/188342331-3ec7e39f-941e-4f47-9049-5ecff5467fe8.png)
 Source: Machine Learning with Andrew Ng - Week 9 - Anomaly Detection 
 
-So how can the fails be distinguished from the passes in this case? As stated before, gaussian functions seem like a useful way to do this. 
+So how can the fails be distinguished from the passes in this case? Gaussian functions seem like a useful way to do this. 
 
 #### Cost function for Anomaly Detection and Recommender Systems. 
 
 A gaussian function shows a distribution of likely values where it peaks in the middle and tapers off at the ends. This is represented by a mean and a standard deviation. 
+
+So one needs to choose features that can show evidence of anomolous behavior. This is reprsented by xi. Then find mean and standard deviation of all the features for the training examples. This is your collection of gaussian distributions. One for each feature of the training examples. Maybe for the car engine example, there will be a feature for engine noise, mechanical vibrations, fuel injection flow rate etc. 
+
+For the new training example, each feature  of that example is compared to the appropriate gaussian distribution. The probabilities calculated for each feature will then be multiplied together for that training example. If the total probability is below the threshold epsilon value then that is an anomolous example. 
+
+#### Making an anomaly detection system 
+
+If one wanted to make an anomaly detection system, take a training set of good engines and use a CV scheme that includes a small set of anomolous examples. Once a model is refined from the CV scheme apply to a test set. 
+
 
 #### Results of Anomaly Detection and Recommender systems 
 
