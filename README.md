@@ -449,7 +449,7 @@ So the best time to use the PCA alrogithm is when one wants to compress the data
 
 #### Explanation: 
 
-Anomaly detection involves trying to distinguish a bad result from the others. The failure modes though can be numerous. An example used in the machine learning course was the detection of faulty airplane engines. The good examples were clustered around a point but there was one example that was way outside the cluster. This fail could be the result of a bad bolt, bad piston, bad sparkplug etc. This would be noted by the anomaly detection system.
+Anomaly detection involves trying to distinguish a bad result from the others. The failure modes though can be numerous. An example used in the machine learning course was the detection of faulty airplane engines. The good examples were clustered around a point but there was one example that was way outside the cluster. This fail could be the result of a bad bolt, bad piston, bad sparkplug etc. 
 
 ![image](https://user-images.githubusercontent.com/20827630/188342085-0c5b8065-6fdd-46e4-bbd7-4e639efb56b3.png)
 Source: Machine Learning with Andrew Ng - Week 9 - Anomaly Detection 
@@ -461,11 +461,30 @@ Source: Machine Learning with Andrew Ng - Week 9 - Anomaly Detection
 
 So how can the fails be distinguished from the passes in this case? Gaussian functions seem like a useful way to do this. 
 
+The differences between an anomaly detection system and a supervised learning system is the training set and the nature of the fails. An anomaly detection system has a small amount of positive examples compared to failed examples. An anomaly detection system has a wide variety of different anomalies that need to be distinguished from good examples. Some examples are 
+
+- Fraud Detection 
+- Airplane Manufacturing 
+- Monitoring Server Racks 
+
+The supervised learning system has many examples both positive and negative. The supervised learning system has fail examples that don't seem to change all that much so there is no variability in that regard. Some examples of these types of situations are 
+
+- Email Spam Classification 
+- Weather Prediction (Sunny, rainy etc)
+- Cancer classification
+
 #### Cost function for Anomaly Detection and Recommender Systems. 
 
 A gaussian function shows a distribution of likely values where it peaks in the middle and tapers off at the ends. This is represented by a mean and a standard deviation. 
 
-So one needs to choose features that can show evidence of anomolous behavior. This is reprsented by xi. Then find mean and standard deviation of all the features for the training examples. This is your collection of gaussian distributions. One for each feature of the training examples. Maybe for the car engine example, there will be a feature for engine noise, mechanical vibrations, fuel injection flow rate etc. 
+![image](https://user-images.githubusercontent.com/20827630/193379609-7f9a05d8-b62c-4f31-b8e5-90b1ac7feead.png)
+Source: https://intuitivetutorial.com/2021/01/03/gaussian-distribution-explained-visually/ Author: Dr. Sajil C. K.
+
+$\mu = \frac{1}{m} * \Sigma(x_{i})$
+
+$\sigma^{2} = \frac{1}{m} * \Sigma(x_{i} - \mu)^{2}$
+
+So one needs to choose features that can show evidence of anomolous behavior. This is reprsented by $x_{i}$. Then find mean and standard deviation of all the features for the training examples. This is your collection of gaussian distributions. One for each feature of the training examples. Maybe for the car engine example, there will be a feature for engine noise, mechanical vibrations, fuel injection flow rate etc. 
 
 For the new training example, each feature  of that example is compared to the appropriate gaussian distribution. The probabilities calculated for each feature will then be multiplied together for that training example. If the total probability is below the threshold epsilon value then that is an anomolous example. 
 
@@ -473,9 +492,19 @@ For the new training example, each feature  of that example is compared to the a
 
 If one wanted to make an anomaly detection system, take a training set of good engines and use a CV scheme that includes a small set of anomolous examples. Once a model is refined from the CV scheme apply to a test set. 
 
+Fit the model p(x) with the training data and then predict the anomolous example with the cross validation set. The cross validation set can also be used to find the optimal cutoff point $\epsilon$. There are three different evaluation metrics recommended by Professor Ng. 
+
+- True Positive, False Positive, True Negative, False Negative 
+- Precision/recall
+- F1-score
+
+#### Choosing features for Anomaly detection 
+
+It looks like feature choice should be a set of features whose values can be extremely large or extremely small. The professor chose to use the server monitoring as the example. There are features for memory use, number of disk accesses, CPU Load and network traffic. It is also possible to perform feature engineering with the base features as well if you wish. 
 
 #### Results of Anomaly Detection and Recommender systems 
 
 ![image](https://user-images.githubusercontent.com/20827630/184471099-8c76f324-9498-4f65-be91-87334682f227.png)
+
 
 
