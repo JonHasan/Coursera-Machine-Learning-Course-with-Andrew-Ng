@@ -506,5 +506,7 @@ It looks like feature choice should be a set of features whose values can be ext
 
 ![image](https://user-images.githubusercontent.com/20827630/184471099-8c76f324-9498-4f65-be91-87334682f227.png)
 
+# End of Projects for Machine Learning Course with Andrew Ng 
+
 
 
