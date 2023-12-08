@@ -188,7 +188,7 @@ This is applied to each of the output nodes to see which class accurately repres
 
 The gradient is the derivative of the Cost function with regard to the theta parameters. It is shown below. 
 
-$\frac{d(J_{\Theta})}{d_{\Theta_{j}} = -\frac{1}{m} * \Sigma(h_{\theta} * X - y) * X$
+$\frac{d(J_{\Theta})} {d_{\Theta_{j}} = -\frac{1}{m} * \Sigma(h_{\theta} * X - y) * X$
 
 This will allow you to choose the optimal theta parameters that will minimize the Cost Functions for each class label. 
 
