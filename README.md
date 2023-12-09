@@ -106,13 +106,19 @@ The decision boundary for the logistic function was decided to be .5. If the hyp
 
 So how do we determine if we are accurately predicting the response variables? Well the following cost function is used. 
 
-$J = \frac{1}{m} * \Sigma(Cost(h_{\theta}))$
+
+\[ f(x) = \begin{cases} 
+         \frac{1}{m} * \Sigma(Cost(h_{\theta}))_1  \\
+          \frac{1}{m} * \Sigma(Cost(h_{\theta}))_2 \\
+         
+       \end{cases}
+    \]
 
 Where
 
-$Cost(h_{\theta}) = log(h_{\theta}*X)$ if y = 1
+$Cost(h_{\theta})_1 = log(h_{\theta}*X)$ if y = 1
 
-$Cost(h_{\theta}) = -log(1-h_{\theta}*X)$ if y = 0
+$Cost(h_{\theta})_2 = -log(1-h_{\theta}*X)$ if y = 0
 
 The reason why this Cost function is used is it was just a creative exercise in order to achieve the desired outcome. What function would allow me to penalize incorrect classifications extremely and when the classifications get closer the cost falls extremely low the closer it gets to the correct value. The functions above seem to do the job correctly so these are used. 
 
