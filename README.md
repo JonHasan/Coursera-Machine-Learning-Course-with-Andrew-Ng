@@ -106,7 +106,7 @@ The decision boundary for the logistic function was decided to be .5. If the hyp
 
 So how do we determine if we are accurately predicting the response variables? Well the following cost function is used. 
 
-$J = \frac{1}{m} * \Sigma(Cost(h_{\theta})$
+$J = \frac{1}{m} * \Sigma(Cost(h_{\theta}))$
 
 Where
 
